@@ -1,0 +1,760 @@
+/************************************** LAYUOT SECTION *********************************************/
+/************************************** BODY *********************************************/
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 100vh 1fr 40vh;
+    grid-template-columns: 1fr;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+    /* font-size: 1rem;
+    font-weight: 500; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a:visited {
+    color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(223, 162, 215, 0.8);
+}
+
+#page-header {
+    grid-area: header;
+}
+
+#page-main {
+    grid-area: main;
+}
+
+#page-footer {
+    grid-area: footer;
+}
+
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(223, 162, 215, 0.8);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(94, 255, 150, 0.5);
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(94, 255, 150);
+}
+
+/************************************** HEADER *********************************************/
+
+header {
+    display: grid;
+    grid-template-areas: 
+    "logo nav"
+    "main main";
+    grid-template-rows: 65px 1fr;
+    grid-template-columns: 35% 1fr;
+    margin: 0;
+}
+
+#logo {
+    grid-area: logo;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 10px;
+    z-index: 2;
+}
+
+.img-logo {
+    width: 10%;
+}
+
+#page-nav {
+    grid-area: nav;
+    background: rgba(94, 255, 150, 0.5);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 8%;
+}
+
+#page-nav:hover {
+    background: rgb(94, 255, 150);
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+#main-screen {
+    grid-area: main;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.main-carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.screen1 {
+    background: url("images/header-picture1.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.screen2 {
+    background: url("images/header-picture2.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.screen3 {
+    background: url("images/header-picture3.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* display: grid;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-columns: 35% 35% 30%; */
+}
+
+.screen4 {
+    background: url("images/header-picture4.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.screen5 {
+    background: url("images/header-picture5.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.screen6 {
+    background: url("images/header-picture6.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.screen7 {
+    background: url("images/header-picture7.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.screen8 {
+    background: url("images/header-picture8.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.headline1 {
+    font-size: 1.8em;
+    font-weight: bolder;
+    margin: 0 20% 0 20%;
+}
+
+.headline-block {
+    background: rgba(94, 255, 150, 0.5);
+    width: 50%;
+    padding: 20px;
+    position: absolute;
+    left: 25%;
+    top: 40%;
+}
+
+.headline-block:hover {
+    background: rgb(94, 255, 150);
+}
+
+#block1 {
+    background: rgba(94, 255, 150, 0.5);
+    width: 30%;
+    height: 12%;
+    padding: 20px;
+    position: absolute;
+    right: 35%;
+    bottom: 10px;
+}
+
+#block1:hover {
+    background: rgb(94, 255, 150);
+}
+
+.text1 {
+    background: rgba(94, 255, 150, 0.5);
+    width: 25%;
+    height: 10%;
+    padding: 20px;
+    position: absolute;
+    left: 20%;
+    bottom: 5%;
+}
+
+.block4-texts {
+    background: rgba(94, 255, 150, 0.5);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.block4-texts:hover {
+    background: rgb(94, 255, 150);
+}
+
+.block4-texts h3 {
+    font-size: 1.3rem;;
+}
+
+#block4 {
+    position: absolute;
+    bottom: 10px;
+    right: 25%;
+    width: 50%;
+    height: 30%;
+    display: grid;
+    grid-template-areas: 
+    "headline"
+    "subheadline"
+    "text"
+    "price";
+}
+
+#headline4 {
+    grid-area: headline;
+}
+
+#subheadline4 {
+    grid-area: subheadline;
+}
+
+#text4 {
+    grid-area: text;
+}
+
+#price4 {
+    grid-area: price;
+}
+
+/* #headline {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 10px;
+}
+
+#subheadline {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0 0 10px 10px;
+} */
+
+/************************************** MAIN *********************************************/
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "pricing"
+    "team"
+    "contactForm";
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 1fr;
+    /* grid-gap: 10px; */
+    margin: 0;
+}
+
+#main-pricing {
+    grid-area: pricing;
+}
+
+#main-team {
+    grid-area: team;
+}
+
+#main-form {
+    grid-area: contactForm;
+}
+
+/************************************* PRICING ************************************************/
+
+#main-pricing {
+    text-align: center;
+    background: rgba(223, 162, 215, 0.8);
+    color: rgb(0, 0, 0);
+    padding-top: 100px;
+    width: 100vw;
+  }
+
+  .carousel-pricing {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .item-pricing {
+    width: 100%;
+    padding: 7% 15%;
+  }
+
+  .item-pricing-mobile {
+    width: 240vw;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+  }
+    
+  .pricing-image {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .card {
+    /* border-radius: 5%; */
+    width: 25%;
+    height: 70%;
+    display: inline-block;
+    margin: 0 30px;
+    background: rgba(94, 255, 150, 0.5);
+  }
+
+  .card-mobile {
+      scroll-snap-align: start;
+      width: 30vw;
+  }
+
+  .card-text {
+    text-align: left;
+    margin: 15px;
+  }
+
+  .card:hover {
+    background: rgb(94, 255, 150);
+  }
+
+  .qwerty {
+      width: 10%;
+  }
+
+  .asdfgh {
+      width: 20%;
+      height: 20%;
+  }
+
+/************************************** MAIN TEAM *********************************************/
+
+#main-team {
+    display: grid;
+    grid-template-areas: 
+    "headlineTeam"
+    "chief"
+    "assistantChief";
+    grid-template-rows: 65px 45% 45%;
+    grid-template-columns: 1fr;
+    padding-top: 100px;
+    background: rgba(94, 255, 150, 0.5);
+    position: relative;
+}
+
+#headline-team {
+    grid-area: headlineTeam;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: absolute;
+    left: calc(40% + 30px);
+}
+
+#chief {
+    grid-area: chief;
+    display: grid;
+    grid-template-areas: 
+    "chiefImg chiefText";
+    grid-template-rows: 1fr;
+    grid-template-columns: 40% 60%;
+}
+
+#chief-img {
+    grid-area: chiefImg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #chief-img img {
+    width: 60%;
+} */
+
+#chief-text {
+    grid-area: chiefText;
+    padding: 30px;
+}
+
+#assistant-chief {
+    grid-area: assistantChief;
+    display: grid;
+    grid-template-areas: 
+    "assistantText assistantImg";
+    grid-template-rows: 1fr;
+    grid-template-columns: 60% 40%;
+    position: relative;
+}
+
+#assistant-img {
+    grid-area: assistantImg;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    bottom: -8%;
+}
+
+#assistant-text {
+    grid-area: assistantText;
+    padding: 30px;
+}
+
+.team-img {
+    width: 80%;
+    z-index: 2;
+}
+
+/************************************** MAIN CONTACT FORM *********************************************/
+
+#main-form {
+    background: rgba(223, 162, 215, 0.8);
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#form {
+    width: 60vw;
+    display: grid;
+    grid-template-areas: 
+    "headline headline"
+    "name quantity"
+    "phone time"
+    "email date"
+    "message message"
+    "checkbox checkbox"
+    "button button";
+    margin: 0 auto;
+    background: rgba(94, 255, 150, 0.5);
+}
+
+#form:hover {
+    background: rgb(94, 255, 150);
+}
+
+#form-headline {
+    grid-area: headline;
+    text-align: center;
+    margin: 20px;
+}
+
+#form-phone {
+    grid-area: phone;
+    margin: 20px;
+    padding: 10px;
+}
+
+#form-email {
+    grid-area: email;
+    margin: 20px;
+    padding: 10px;
+}
+
+#form-name {
+    grid-area: name;
+    margin: 20px;
+    padding: 10px;
+}
+
+#form-quantity {
+    grid-area: quantity;
+    margin: 20px;
+    padding: 10px;
+}
+
+#form-time {
+    grid-area: time;
+    margin: 20px;
+    padding: 10px;
+}
+
+#form-date {
+    grid-area: date;
+    margin: 20px;
+    padding: 10px;
+}
+
+#form-message {
+    grid-area: message;
+    margin: 20px;
+    padding: 10px;
+}
+
+#form-checkbox {
+    grid-area: checkbox;
+    margin: 20px;
+    padding: 10px;
+}
+
+#form-checkbox p {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#form-button {
+    grid-area: button;
+    margin: 20px;
+    padding: 10px;
+}
+
+/************************************** LOCATION *********************************************/
+
+#main-contact {
+    display: grid;
+    grid-template-areas: 
+    "contact"
+    "map";
+    grid-template-columns: 100%;
+    grid-template-rows: 60vh 60vh;
+    background: rgba(94, 255, 150, 0.5);
+}
+
+#main-map {
+    grid-area: map;
+    height: 60vh;
+}
+
+#contact {
+    width: 100%;
+    grid-area: contact;
+    display: grid;
+    grid-template-areas: 
+    "icon1 icon2 icon3 icon4"
+    "content1 content2 content3 content4";
+    align-items: center;
+    align-content: flex-end;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact-item {
+    margin: 20px;
+    font-size: 1.5rem;
+    /* text-align: center; */
+}
+
+.contact-icon {
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+}
+
+#icon1 {
+    grid-area: icon1;
+    display: flex;
+    justify-content: center;
+}
+
+#content1 {
+    grid-area: content1;
+    margin: 0 auto;
+}
+
+#icon2 {
+    grid-area: icon2;
+    display: flex;
+    justify-content: center;
+}
+
+#content2 {
+    grid-area: content2;
+    margin: 0 auto;
+}
+
+#icon3 {
+    grid-area: icon3;
+    display: flex;
+    justify-content: center;
+}
+
+#content3 {
+    grid-area: content3;
+    margin: 0 auto;
+}
+
+#icon4 {
+    grid-area: icon4;
+    display: flex;
+    justify-content: center;
+}
+
+.at {
+    font-size: 4rem;
+}
+
+#content4 {
+    grid-area: content4;
+    margin: 0 auto;
+}
+
+.contact-icon:hover {
+    color: rgba(223, 162, 215, 0.8);
+}
+
+/************************************** FOOTER *********************************************/
+
+footer {
+    display: grid;
+    grid-template-areas: 
+    "contact icons"
+    "copyRight copyRight";
+    grid-template-rows: 1fr 50px;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    background: rgba(223, 162, 215, 0.8);
+}
+
+#copy-right {
+    grid-area: copyRight;
+    background:  rgba(94, 255, 150, 0.5);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    grid-area: icons;
+    font-size: 3rem;
+    justify-content: end;
+    align-items: flex-end;
+    color:black;
+    margin: 20px;
+}
+
+.social-icons2 {
+    font-size: 3rem;
+    color:black;
+    margin: 20px;
+}
+
+.social-icons-block2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    grid-area: icons;
+}
+
+.social-icons:hover {
+    color: rgba(94, 255, 150, 0.5);
+}
+
+.social-icons2:hover {
+    color: rgba(223, 162, 215, 0.8);
+}
+
+#footer-contact {
+    grid-area: contact;
+}
+
+/******************************************** SCROLL OVERFLOW X *********************************************/
+
+.container {
+    display: flex;
+    overflow: auto;
+  }
+  
+  .container.x {
+    width: 90%;
+    margin: 0 auto;
+    flex-flow: row nowrap;
+  }
+  
+  .x.mandatory-scroll-snapping {
+    scroll-snap-type: x mandatory;
+  }
+  
+  .y.mandatory-scroll-snapping {
+    scroll-snap-type: y mandatory;
+  }
+  
+  .x.proximity-scroll-snapping {
+    scroll-snap-type: x proximity;
+  }
+  
+  .y.proximity-scroll-snapping {
+    scroll-snap-type: y proximity;
+  }
+  
+  .container > div {
+    scroll-snap-align: center;
+    flex: none;
+  }
+  
+  .x.container > div {
+    width: 30%;
+  }
+  
+  .y.container > div {
+    line-height: 256px;
+    font-size: 128px;
+    width: 256px;
+  }
